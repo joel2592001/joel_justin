@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %} {% endblock%}
+{% block content %}
+    <h1 align="center">Welcome to my website</h1>
+    <div class="d-grid gap-2">
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login</a>
+        <a href="{{ url_for('signup') }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Signup</a>
+    </div>
+
+{% endblock %}

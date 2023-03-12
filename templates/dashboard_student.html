@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} {% endblock%}
+{% block content %}
+    <h1>Dashboard - Student</h1>
+    <h2>Activity Log:</h2>
+    <ul>
+      {% for i in activities %}
+      <li>{{ i }}</li>
+      {% endfor %}
+    </ul>
+    <br>
+    <a class="btn btn-primary" href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}
